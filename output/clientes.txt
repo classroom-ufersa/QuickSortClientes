@@ -1,0 +1,2 @@
+código do cliente: 123654	 Nome: Allan	 Endereço: Avenida da Independência
+código do cliente: 789456	 Nome: João	 Endereço: São Paulo
