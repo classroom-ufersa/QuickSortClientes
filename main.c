@@ -13,7 +13,7 @@ int main(void){
         scanf(" %[^\n]", clientes[i].nome); //Cadastro do nome do cliente
         getchar(); //Função para absorver o \n
         printf("Informe o endereço do cliente: ");
-        scanf(" %[^\n]", clientes[i].endereço); //Cadastro do enedereço do cliente
+        scanf(" %[^\n]", clientes[i].endereco); //Cadastro do enedereço do cliente
         getchar();
         printf("informe o código do cliente: ");
         scanf("%d", &clientes[i].codigo_cliente); //Cadatro do código do cliente

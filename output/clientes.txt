@@ -1,2 +1,3 @@
-código do cliente: 123654	 Nome: Allan	 Endereço: Avenida da Independência
-código do cliente: 789456	 Nome: João	 Endereço: São Paulo
+código do cliente: 123	 Nome: Allan	 Endereço: São Paulo
+código do cliente: 456	 Nome: Clara	 Endereço: Brasilia
+código do cliente: 789	 Nome: José	 Endereço: Rio de Janeiro
