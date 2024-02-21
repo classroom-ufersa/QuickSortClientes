@@ -14,7 +14,7 @@ int main(void){
         printf("Informe o endereço do cliente: ");
         scanf(" %[^\n]", clientes[i].endereco); 
         getchar();
-        printf("informe o código do cliente: ");
+        printf("Digite o código do cliente: ");
         scanf("%d", &clientes[i].codigo_cliente); 
         getchar();
     }
