@@ -6,8 +6,7 @@ Ordenação de clientes com Quick Sort
 * Maria Clara;
 * Shamyra de Fatima;
 
-#Explicação do projeto
--RASCUNHO
+#Explicação do projeto(RASCUNHO)
 
   * Introdução;
     
