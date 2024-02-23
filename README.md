@@ -1,6 +1,6 @@
 
 # QuickSortClientes
-Ordenação de clientes com Quick Sort
+Ordenação de clientes com QuickSort
 ## Componentes
 * Allan Gabriel;
 * Evelyn Cristina;
@@ -9,42 +9,33 @@ Ordenação de clientes com Quick Sort
 
 # Explicação do projeto
 
-* Índice
+## Índice
     
-  1-Introdução
-  
-  2-O que é QuickSort?
-    
-  3-Finalidade de criação
-    
-  4-Habilidades e Estudos
-    
-  5-Como executar
-    
-  6-Explicação do Código
-    
-  7-Resultado do Código
-    
-  * Introdução;
-    
-  Breve apresentação sobre o projeto
-
   * O que é QuickSort?
     
-  Mais aprofundado
-  
-  * Motivo
+  * Finalidade de criação
     
- Para que serve o código e com qual finalidade foi criado
+  * Habilidades e Estudos
+    
+  * Como executar
+    
+  * Explicação do Código
+    
+  * Resultado do Código
+    
+## O que é QuickSort?
+O Quicksort é um dos algoritmos de ordenação mais conhecidos
+## Finalidade de Criação
+Tem como finalidade armazenar os clientes ordenados utilizando o algoritmo de ordenação QuickSort em um arquivo .txt que mantenha os dados salvos a partir de um ID individual distribuido para cada cliente.
 
-  * Habilidades
+ ##  Habilidades e Estudos
     
   Habilidades que são requeridos para estudar/rodar o código
 
-  * Como executar
+ ## Como executar
     
   A informação de como executar o código
 
-  * No que deve resultar o código
+ ## Explicação do Código
 
-  * Explicando as funções
+ ## Resultado do Código
