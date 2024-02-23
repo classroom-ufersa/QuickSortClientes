@@ -5,16 +5,28 @@ Ordenação de clientes com Quick Sort
 * Evelyn Cristina;
 * Maria Clara;
 * Shamyra de Fatima;
+  
+  #Explicação do projeto(RASCUNHO)
 
-#Explicação do projeto(RASCUNHO)
-
+  * Índice
+    
+    1-Introdução
+    
+    2-O que é QuickSort?
+    
+    3-Finalidade de criação
+    
+    4-Habilidades e Estudos
+    
+    5-Como executar
+    
+    6-Explicação do Código
+    
+    7-Resultado do Código
+    
   * Introdução;
     
   Breve apresentação sobre o projeto
-
-  * Índice;
-     
-  Tópicos que vão ser abordados
 
   * O que é QuickSort?
     
