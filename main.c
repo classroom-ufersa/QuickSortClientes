@@ -14,6 +14,11 @@ int main(void){
     }while (n <= 0);
 
     Cliente *clientes = (Cliente*) malloc(n * sizeof(Cliente)); 
+    if(clientes == NULL){
+        printf("Erro ao alocar memória.\n");
+        exit(1);
+    }
+
     for(int i = 0; i < n; i++){
 
         printf("Informe o nome do cliente: ");

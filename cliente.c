@@ -47,11 +47,32 @@ void quicksort(Cliente *clientes, int n){
 }
 
 void atribuirDados(Cliente *clientes, int n){
+    FILE *client = fopen("clientes.txt", "r"); 
+    if(client == NULL){
+        printf("Erro ao abrir o arquivo");
+        exit(1);
+    }
 
-    FILE *client = fopen("clientes.txt", "a"); 
+    Cliente *clientes_existentes = (Cliente*) malloc(n * sizeof(Cliente));
+    int clientesCadastrados = 0;
+    while(fscanf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\n", &clientes_existentes[clientesCadastrados].codigo_cliente,
+        clientes_existentes[clientesCadastrados].nome, clientes_existentes[clientesCadastrados].endereco) == 3) {
+        clientesCadastrados++;
+    }
+    fclose(client);
+
+    clientes_existentes = (Cliente*) realloc(clientes_existentes, (n + clientesCadastrados) * sizeof(Cliente));
     for(int i = 0; i < n; i++){
-        fprintf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\n", clientes[i].codigo_cliente,
-        clientes[i].nome, clientes[i].endereco); 
+        clientes_existentes[clientesCadastrados + i] = clientes[i];
+    }
+
+    quicksort(clientes_existentes, n + clientesCadastrados);
+
+    client = fopen("clientes.txt", "w");
+    for(int i = 0; i < n + clientesCadastrados; i++){
+        fprintf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\n", clientes_existentes[i].codigo_cliente,
+        clientes_existentes[i].nome, clientes_existentes[i].endereco); 
     }
     fclose(client); 
+    free(clientes_existentes);
 }
