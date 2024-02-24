@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "cliente.c" 
 #include <stdlib.h>
-#include <string.h>
 
 int main(void){
     int n;

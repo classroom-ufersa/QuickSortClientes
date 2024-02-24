@@ -1,7 +1,6 @@
 #include "cliente.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
 
 struct client{
     int numero_cliente;
