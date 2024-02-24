@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 struct client{
+    int numero_cliente;
     char nome[50];
     char endereco[50];
     int codigo_cliente;
