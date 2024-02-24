@@ -16,8 +16,6 @@ int main(void){
     Cliente *clientes = (Cliente*) malloc(n * sizeof(Cliente)); 
     for(int i = 0; i < n; i++){
 
-        do{
-
         printf("Informe o nome do cliente: ");
         scanf(" %[^\n]", clientes[i].nome); 
         getchar(); 
@@ -29,8 +27,7 @@ int main(void){
         printf("Digite o código do cliente: ");
         scanf("%d", &clientes[i].codigo_cliente); 
         getchar();
-    }while (!verificarValidade(&clientes[i]));
-}
+    }
 
     quicksort(clientes, n); 
     atribuirDados(clientes, n);
