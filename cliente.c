@@ -5,7 +5,7 @@
 struct client{
     int numero_cliente;
     char nome[50];
-    char endereco[50];
+    char endereco[100];
     int codigo_cliente;
 };
 

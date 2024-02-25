@@ -1,5 +1,0 @@
-código do cliente: 256	 Nome: Maria	 Endereço: Rua 13 de maio
-código do cliente: 426	 Nome: Teressa	 Endereço: Bairro Riacho do meio
-código do cliente: 786	 Nome: José	 Endereço: Rua da Evolução
-código do cliente: 33401	 Nome: 34	 Endereço: 8
-código do cliente: 7874576	 Nome: lara	 Endereço: brasil
