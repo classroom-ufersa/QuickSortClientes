@@ -2,6 +2,7 @@
 #include "cliente.c" 
 #include <stdlib.h>
 
+
 int main(void){
     int n;
 
