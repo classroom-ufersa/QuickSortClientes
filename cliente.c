@@ -5,7 +5,7 @@
 struct client{
     int numero_cliente;
     char nome[50];
-    char endereco[50];
+    char endereco[100];
     int codigo_cliente;
 };
 
@@ -53,26 +53,33 @@ void atribuirDados(Cliente *clientes, int n){
         exit(1);
     }
 
-    Cliente *clientes_existentes = (Cliente*) malloc(n * sizeof(Cliente));
+    int tamanho = n;
+    Cliente *clientes_existentes = (Cliente*) malloc(tamanho * sizeof(Cliente));
     int clientesCadastrados = 0;
     while(fscanf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\n", &clientes_existentes[clientesCadastrados].codigo_cliente,
-        clientes_existentes[clientesCadastrados].nome, clientes_existentes[clientesCadastrados].endereco) == 3) {
+        clientes_existentes[clientesCadastrados].nome, clientes_existentes[clientesCadastrados].endereco) >= 1) {
         clientesCadastrados++;
+        if(clientesCadastrados >= tamanho){
+            tamanho *= 2;
+            clientes_existentes = (Cliente*) realloc(clientes_existentes, tamanho * sizeof(Cliente));
+        }
     }
     fclose(client);
 
     clientes_existentes = (Cliente*) realloc(clientes_existentes, (n + clientesCadastrados) * sizeof(Cliente));
     for(int i = 0; i < n; i++){
-        clientes_existentes[clientesCadastrados + i] = clientes[i];
+     
+    free(clientes_existentes);   clientes_existentes[clientesCadastrados + i] = clientes[i];
     }
 
     quicksort(clientes_existentes, n + clientesCadastrados);
 
     client = fopen("clientes.txt", "w");
     for(int i = 0; i < n + clientesCadastrados; i++){
-        fprintf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\n", clientes_existentes[i].codigo_cliente,
+        fprintf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\t\n", clientes_existentes[i].codigo_cliente,
         clientes_existentes[i].nome, clientes_existentes[i].endereco); 
     }
     fclose(client); 
-    free(clientes_existentes);
 }
+
+
