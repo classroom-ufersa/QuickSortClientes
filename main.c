@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "cliente.c" 
 #include <stdlib.h>
-
+#include <time.h>
 
 int main(void){
+    clock_t comeco = clock();
     int n;
 
     do{
@@ -39,6 +40,9 @@ int main(void){
     atribuirDados(clientes, n);
 
     free(clientes); 
+
+    double tempo = (double) (clock() - comeco) / CLOCKS_PER_SEC;
+    printf("Tempo de execução do programa em segundos: %f\n", tempo);
 
     return 0;
 }
