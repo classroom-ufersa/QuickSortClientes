@@ -1,0 +1,4 @@
+código do cliente: 1234	 Nome: clara	 Endereço: pau dos ferros
+código do cliente: 1324	 Nome: evie 	 Endereço: rio de janeiro
+código do cliente: 1234	 Nome: alexandre	 Endereço: 1234
+código do cliente: 1324	 Nome: bia	 Endereço: brasil

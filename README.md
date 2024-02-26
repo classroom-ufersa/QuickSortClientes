@@ -8,26 +8,8 @@ Somos discentes da disciplina Algoritmos e Estrutura de Dados I ministrada pela 
 * Maria Clara Saraiva Leal;
 * Shamyra de Fátima Saraiva Carvalho;
 
-# Explicação Geral do Projeto
-
-<<<<<<< HEAD
-## Índice:
-1. Introdução
-2. O que é QuickSort
-3. Por que utilizar o QuickSort
-4. Funcionalidades do programa
-5. Como executar
-
-## Introdução:
-
-Nesse projeto utilizaremos o algoritimo QuickSort, o qual num mecanismo de recurdivo que utiliza a divisão de e a conquista como ordenação ou seja, "parte" os problemas maiores em menores para facilitar sua resoluçãpo. Sendo assim, nesse projeto faremos a ordenação de clientes de uma maneira eficiente de gerenciar e organizar suas informações.  
-    
-  Breve apresentação sobre o projeto
-
-=======
 ## Índice
     
->>>>>>> abfeae3c4868c2bce8db29d2a16a2098f96f879b
   * O que é QuickSort?
     
   * Finalidade de criação
