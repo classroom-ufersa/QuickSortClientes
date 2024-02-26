@@ -7,3 +7,5 @@ void atribuirDados(Cliente *clientes, int n);
 /*Função onde eu implemento o QuickSort que vai separar os dados em duas pilhas e reorganizar de acordo com a ordem do id cadastrado
 para cada um cliente*/
 void quicksort(Cliente *clientes, int n);
+/* Função para verificar se possui um inteiro onde deveria ser informado uma string*/
+int contem_apenas_letras(char *str);
