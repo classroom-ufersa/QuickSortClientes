@@ -61,7 +61,7 @@ void quicksort(Cliente *clientes, int n){
 
 void atribuirDados(Cliente *clientes, int n){
 
-    FILE *client = fopen("clientes.txt", "a"); 
+    FILE *client = fopen("clientes.txt", "a+"); 
     for(int i = 0; i < n; i++){
         fprintf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\n", clientes[i].codigo_cliente,
         clientes[i].nome, clientes[i].endereco); 
