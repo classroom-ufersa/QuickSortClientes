@@ -53,7 +53,7 @@ Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mante
       2. Stdio.h: Oferece funções para entrada e saída de dados.
       3. Cliente.h: Uma biblioteca criada especificamente para o projeto, com funções que implementam o Quicksort e gerenciam os dados em arquivos de texto.
       4. Time.h: Biblioteca padrão do C que inclui funções para manipulação de datas e horas.
-
+      5. ctype.h: Biblioteca que contém funções e macros para manipulação de caracteres.
    \\ clientes.c \\ 
 
     -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.
