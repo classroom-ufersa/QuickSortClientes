@@ -30,6 +30,7 @@ int main(void){
         getchar();
         }while (!contem_apenas_letras(clientes[i].nome)); 
 
+
         printf("Informe o endereço do cliente: ");
         scanf(" %[^\n]", clientes[i].endereco); 
         getchar();
