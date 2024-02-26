@@ -16,11 +16,13 @@ Somos discentes da disciplina Algoritmos e Estrutura de Dados I ministrada pela 
     
   * Finalidade de criação
     
-  * Habilidades e Estudos
+  *Estudos e Conhecimentos
     
   * Como executar
     
   * Explicação do Código
+    
+  * Análise de Complexidade
     
   * Resultado do Código
     
