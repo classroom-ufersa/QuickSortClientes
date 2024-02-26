@@ -2,6 +2,7 @@
 #include "cliente.c" 
 #include <stdlib.h>
 #include <time.h>
+#include <ctype.h>
 
 int main(void){
     clock_t comeco = clock();
@@ -23,9 +24,11 @@ int main(void){
 
     for(int i = 0; i < n; i++){
 
+        do {
         printf("Informe o nome do cliente: ");
         scanf(" %[^\n]", clientes[i].nome); 
-        getchar(); 
+        getchar();
+        }while (!contem_apenas_letras(clientes[i].nome)); 
 
         printf("Informe o endereço do cliente: ");
         scanf(" %[^\n]", clientes[i].endereco); 
