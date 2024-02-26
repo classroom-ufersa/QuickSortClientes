@@ -8,8 +8,6 @@ Somos discentes da disciplina Algoritmos e Estrutura de Dados I ministrada pela 
 * Maria Clara Saraiva Leal;
 * Shamyra de Fátima Saraiva Carvalho;
 
-# Explicação Geral do Projeto
-
 ## Índice
     
   * O que é QuickSort?
@@ -60,6 +58,7 @@ Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mante
 
   -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.
   -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.
+  -> int contem_apenas_letras: Essa função verifica que quando o cliente inserir seu nome so será aceito e  cadastrado quando for digitado uma string, recussando e pedindo para digitar novamente se for inserido um inteiro no campo nome.
   -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.
       * PIVO        : Escolhe o primerio cliente como pivô;
       * i           : Inicializa i para apontar para o segundo cliente no array;
@@ -114,3 +113,4 @@ Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mante
     O caso médio é muito mais provável do que o pior e o melhor caso. Apesar de estar na mesma classe de complexidade do Merge Sort e do Heap Sort, há experimentos que demonstram que o Quick Sort em seu melhor caso e caso médio é por volta de 3x mais eficiente que o Merge Sort, porque ele contém constantes menores.
 
  ## Resultado do Código
+    -> Teremos como resultado do código a ordenação dos clientes por seu ID fornecido.
