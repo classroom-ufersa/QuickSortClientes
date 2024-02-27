@@ -67,16 +67,6 @@ void quicksort(Cliente *clientes, int n){
     particao(clientes, 0, n - 1);
 }
 
-void atribuirDados(Cliente *clientes, int n){
-
-    FILE *client = fopen("clientes.txt", "a+"); 
-    for(int i = 0; i < n; i++){
-        fprintf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\n", clientes[i].codigo_cliente,
-        clientes[i].nome, clientes[i].endereco); 
-    }
-    fclose(client); 
-}
-
 Cliente *lerArquivo(Cliente *clientes, int *n){
     FILE *ler = fopen("clientes.txt","r");
     char linha[100];
