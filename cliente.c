@@ -43,19 +43,17 @@ void particao(Cliente *clientes, int inicio, int fim){
 }
 
 int contem_apenas_letras(char *str) {
-    //percorre cada posição na string 
     for (int index = 0; str[index] != '\0'; index++) {
-        //compara se cada posição é uma letra e se não é um espaço
         if (!isalpha(str[index]) && str[index] != ' ') {
             printf("A string deve conter apenas letras.\n");
-            return 0; //contem apenas letras
+            return 0; 
         }
     }
-    return 1; //não contém apenas letras
+    return 1; 
 }
 
 int contem_apenas_numeros(char *str) {
-    //percorre cada posição na string 
+
     for (int index = 0; str[index] != '\0'; index++) {
         if (isalpha(str[index]) && str[index]) {
             printf("só aceita numero!!!!!!!!\n");

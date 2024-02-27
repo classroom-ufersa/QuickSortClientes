@@ -32,18 +32,19 @@ int main(void)
     for (int i = qnt; i < n; i++)
     {
 
-        do
-        {
+        do {
             printf("Informe o nome do cliente: ");
             scanf(" %[^\n]", clientes[i].nome);
             getchar();
         } while (!contem_apenas_letras(clientes[i].nome));
 
-        printf("Informe o endereço do cliente: ");
-        scanf(" %[^\n]", clientes[i].endereco);
-        getchar();
-        do
-        {
+        do {
+            printf("Informe o endereço do cliente: ");
+            scanf(" %[^\n]", clientes[i].endereco);
+            getchar();
+        } while (!contem_apenas_letras(clientes[i].endereco));
+
+        do {
             printf("Digite o código do cliente: ");
             scanf(" %[^\n]", aux);
             getchar();
