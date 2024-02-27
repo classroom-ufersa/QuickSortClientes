@@ -78,23 +78,40 @@
 
 
 
-## Análise de complexidade de tempo 
-  -> O algoritmo baseia a ordenação em sucessivas execuções de particionamento, uma rotina que escolhe um pivot e o posiciona no array de uma maneira em que os elementos menores ou iguais ao pivot estão à sua esquerda e os maiores estão à sua direita.
+<h1 align="left">Análise de Complexidade de Tempo</h1>
 
-      O algoritmo de particionamente é O(n)
-      Há dois algoritmos populares de particionamento: o de Lomuto e o de Hoare.
-      O particionamento Hoare, embora mais complexo, é na prática mais eficiente que o de Lomuto.
-    -> No caso médio e no melhor caso, o Quick Sort é O(n∗logn)
-      
-    ->No pior caso, o Quick Sort é O(n2)
-      O pior caso do Quick Sort é raro e é causado por sucessivas péssimas escolhas de pivot quando o array já está ordenado. 
-      
-      Para remediar este problema, há estratégias para escolher melhor o elemento que será o pivot do particionamento, entre elas estão:
-      *Escolher o pivot aleatoriamente.
-      *Escolher o pivot como sendo a mediana entre o primeiro, o elemento central e o último elemento do array.
-   
-    O caso médio é muito mais provável do que o pior e o melhor caso. Apesar de estar na mesma classe de complexidade do Merge Sort e do Heap Sort, há experimentos que demonstram que o Quick Sort em seu melhor caso e caso médio é por volta de 3x mais eficiente que o Merge Sort, porque ele contém constantes menores. 
-    
+###
 
- ## Resultado do Código
-    -> Teremos como resultado do código a ordenação dos clientes por seu ID fornecido.
+<p align="left">-> O algoritmo baseia a ordenação em sucessivas execuções de particionamento, uma rotina que escolhe um pivot e o posiciona no array de uma maneira em que os elementos menores ou iguais ao pivot estão à sua esquerda e os maiores estão à sua direita.<br><br>      O algoritmo de particionamente é O(n)<br>      Há dois algoritmos populares de particionamento: o de Lomuto e o de Hoare.<br>      O particionamento Hoare, embora mais complexo, é na prática mais eficiente que o de Lomuto.<br>    -> No caso médio e no melhor caso, o Quick Sort é O(n∗logn)<br>      <br>    ->No pior caso, o Quick Sort é O(n2)<br>      O pior caso do Quick Sort é raro e é causado por sucessivas péssimas escolhas de pivot quando o array já está ordenado. <br>      <br>      Para remediar este problema, há estratégias para escolher melhor o elemento que será o pivot do particionamento, entre elas estão:<br>      *Escolher o pivot aleatoriamente.<br>      *Escolher o pivot como sendo a mediana entre o primeiro, o elemento central e o último elemento do array.<br>   <br>    O caso médio é muito mais provável do que o pior e o melhor caso. Apesar de estar na mesma classe de complexidade do Merge Sort e do Heap Sort, há experimentos que demonstram que o Quick Sort em seu melhor caso e caso médio é por volta de 3x mais eficiente que o Merge Sort, porque ele contém constantes menores.</p>
+
+###
+
+<h1 align="left">Análise de Complexidade de Espaço</h1>
+
+###
+
+<p align="left">O QuickSort é um algoritmo de ordenação eficiente e amplamente utilizado. No entanto, como você mencionou, ele requer memória adicional para funcionar corretamente. Vamos explorar isso com mais detalhes:<br><br>1. Divisão e Conquista:<br>   - O QuickSort segue o paradigma de divisão e conquista.<br>   - Ele divide o array em subarrays menores, ordena cada subarray e, em seguida, combina os resultados.<br>   - A parte crucial é a etapa de particionamento, onde os elementos são rearranjados em relação a um *pivô*.<br><br>2. Complexidade de Espaço:<br>   - A complexidade de espaço do QuickSort é determinada pelo uso da *pilha de chamadas* durante a recursão.<br>   - Vamos analisar as áreas que consomem memória:<br><br>   - Variáveis Locais:<br>     - Cada chamada recursiva cria um novo *quadro de pilha* para armazenar informações locais (como pivo, i e j no seu código).<br>     - Essas variáveis ocupam espaço na pilha.<br>     - Portanto, a quantidade de memória utilizada depende do número de chamadas recursivas.<br><br>   - Pilha de Chamadas:<br>     - O QuickSort faz chamadas recursivas para particionar subarrays.<br>     - Se a recursão não for balanceada (por exemplo, se o pivô sempre for o menor ou o maior elemento), a pilha de chamadas pode ficar grande.<br>     - No melhor caso (recursão balanceada), a complexidade de espaço é *O(log n)*.<br>     - No pior caso (recursão não balanceada), a complexidade de espaço é *O(n)*</p>
+
+###
+
+<h1 align="left">Resultado do Código:</h1>
+
+###
+
+<p align="left">-> Teremos como resultado do código a ordenação dos clientes por seu ID fornecido.</p>
+
+###
+
+<h1 align="left">Exemplificação do QuickSort</h1>
+
+###
+
+<div align="center">
+  <img height="500" src="https://res.cloudinary.com/practicaldev/image/fetch/s--meP18Mdl--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/r8xco3mmscn7dow2k5yp.png"  />
+</div>
+
+###
+
+<p align="left">1-Temos uma lista completamente desordenada;<br>2- Nesse segundo passo foi selecionado o número 3 como pivô e foi separado em duas sublistas os números menores ou iguais ao pivô à esquerda e os maiores à direita;<br>3- Logo após é dividido em mais sublistas e pivôs foram selecionados até que só reste um elemento por sublista e assim forme uma lista ordenada.</p>
+
+###
