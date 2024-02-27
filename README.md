@@ -1,66 +1,73 @@
 
-# QuickSortClientes
-Olá! 
-Somos discentes da disciplina Algoritmos e Estrutura de Dados I ministrada pela docente Dra. Rosana Cibely, nesse projeto da segunda unidade da disciplina o objetivo é utilizar o algoritmo de ordenação QuickSort para realizar uma ordenação de clientes.
-## Componentes 
-* Allan Gabriel Silva de Freitas;
-* Evelyn Cristina de Oliveira Gomes;
-* Maria Clara Saraiva Leal;
-* Shamyra de Fátima Saraiva Carvalho;
+<h1 align="left">QuickSort 💻</h1>
 
-## Índice
-    
-  * O que é QuickSort?
-    
-  * Finalidade de criação
-    
-  *Estudos e Conhecimentos
-    
-  * Como executar
-    
-  * Explicação do Código
-    
-  * Análise de Complexidade
-    
-  * Resultado do Código
-    
-## O que é QuickSort?
-O QuickSort é um algoritmo de ordenação eficiente e um dos mais conhecidos, ele opera utilizando a estratégia de “dividir para conquistar”. Sendo utilizado amplamente para ordenar grandes conjuntos de dados, ele escolhe um número da lista chamado de “pivô", coloca os números menores à esquerda e os maiores à direita, sendo esse processo repetido em cada metade até que toda lista toda esteja ordenada.
+###
 
-## Finalidade de Criação
-Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mantenha os dados salvos a partir de um ID individual distribuido para cada cliente utilizando o algoritmo de ordenação QuickSort programado na linguagem C.
+<p align="left">Olá! <br>Somos discentes da disciplina Algoritmos e Estrutura de Dados I ministrada pela docente Dra. Rosana Cibely, nesse projeto da segunda unidade da disciplina o objetivo é utilizar o algoritmo de ordenação QuickSort para realizar uma ordenação de clientes.</p>
 
- ## Estudos e Conhecimentos
- Há alguns estudos e conhecimentos que se torna necessário ter uma base antes de se estudar o código do QuickSort em C, algumas delas são:
- - O conhecimento da Programação em C;
- - Manipulação de Vetores e Ponteiros;
- - Compreensão de Algoritmos de Ordenação;
- - Análise de Complexidade de Algoritmos;
- - Pivôs e Partições.
-   
- ## Como executar   
- Para executar o programa, deve ser feito os seguintes passos:
-- Abra o terminal na pasta do projeto.
-- Compile os arquivos main.c e cliente.c com o comando gcc main.c cliente.c -o main.
-- Execute o programa com o comando ./main.
-- Siga as instruções exibidas no console para cadastrar os clientes. Você será solicitado a inserir o nome, endereço e código do cliente.
-- Após o cadastro, os dados dos clientes serão ordenados e armazenados no arquivo "clientes.txt".
+###
 
- ## Explicação do Código
-   O projeto consiste na implementação do algoritmo Quicksort para ordenar clientes com base em um ID atribuído a cada um. Após a ordenação, os dados dos clientes são armazenados em um arquivo .txt para manter os registros constantemente atualizados. Três bibliotecas são essenciais para o funcionamento do código:
+<h1 align="left">Índice</h1>
 
-      1. Stdlib.h: Contém funções básicas para manipulação de memória dinâmica. 
-      2. Stdio.h: Oferece funções para entrada e saída de dados.
-      3. Cliente.h: Uma biblioteca criada especificamente para o projeto, com funções que implementam o Quicksort e gerenciam os dados em arquivos de texto.
-      4. Time.h: Biblioteca padrão do C que inclui funções para manipulação de datas e horas.
+###
 
+<p align="left">* O que é QuickSort?<br>    <br>  * Finalidade de criação<br>    <br>  * Estudos e Conhecimentos<br>    <br>  * Como executar<br>    <br>  * Explicação do Código<br>    <br>  * Análise de Complexidade<br>    <br>  * Resultado do Código</p>
+
+###
+
+<h1 align="left">O que é QuickSort?</h1>
+
+###
+
+<p align="left">O QuickSort é um algoritmo de ordenação eficiente e um dos mais conhecidos, ele opera utilizando a estratégia de “dividir para conquistar”. Sendo utilizado amplamente para ordenar grandes conjuntos de dados, ele escolhe um número da lista chamado de “pivô", coloca os números menores à esquerda e os maiores à direita, sendo esse processo repetido em cada metade até que toda lista toda esteja ordenada.</p>
+
+###
+
+<h1 align="left">Finalidade de criação</h1>
+
+###
+
+<p align="left">Foi criado a fim de armazenar os clientes ordenados em um arquivo .txt que mantenha os dados salvos a partir de um ID individual distribuido para cada cliente utilizando o algoritmo de ordenação QuickSort programado na linguagem C.</p>
+
+###
+
+<h1 align="left">Estudos e conhecimento</h1>
+
+###
+
+<p align="left">Há alguns estudos e conhecimentos que se torna necessário ter uma base antes de se estudar o código do QuickSort em C, algumas delas são:<br> - O conhecimento da Programação em C;<br> - Manipulação de Vetores e Ponteiros;<br> - Compreensão de Algoritmos de Ordenação;<br> - Análise de Complexidade de Algoritmos;<br> - Pivôs e Partições.</p>
+
+###
+
+<h1 align="left">Como executar</h1>
+
+###
+
+<p align="left">Para executar o programa, deve ser feito os seguintes passos:<br>- Abra o terminal na pasta do projeto.<br>- Compile os arquivos main.c e cliente.c com o comando gcc main.c cliente.c -o main.<br>- Execute o programa com o comando ./main.<br>- Siga as instruções exibidas no console para cadastrar os clientes. Você será solicitado a inserir o nome, endereço e código do cliente.<br>- Após o cadastro, os dados dos clientes serão ordenados e armazenados no arquivo "clientes.txt".</p>
+
+###
+
+<h1 align="left">Explicação do código</h1>
+
+###
+
+<p align="left">O projeto consiste na implementação do algoritmo Quicksort para ordenar clientes com base em um ID atribuído a cada um. Após a ordenação, os dados dos clientes são armazenados em um arquivo .txt para manter os registros constantemente atualizados. Três bibliotecas são essenciais para o funcionamento do código:<br><br>      1. Stdlib.h: Contém funções básicas para manipulação de memória dinâmica. <br>      2. Stdio.h: Oferece funções para entrada e saída de dados.<br>      3. Cliente.h: Uma biblioteca criada especificamente para o projeto, com funções que implementam o Quicksort e gerenciam os dados em arquivos de texto.<br>      4. Time.h: Biblioteca padrão do C que inclui funções para manipulação de datas e horas.<br>      5. ctype.h: Biblioteca que contém funções e macros para manipulação de caracteres.</p>
+
+###
    \\ clientes.c \\ 
 
+<<<<<<< HEAD
       -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.
 
       -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.
 
       -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.
+=======
+    -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.
+    -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.
+    
+    -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.
+>>>>>>> 9bdfd19c82930f362dcaf0db972eacb82092f10d
       * PIVO        : Escolhe o primerio cliente como pivô;
       * i           : Inicializa i para apontar para o segundo cliente no array;
       * j           : Inicializa j para apontar para o último cliente do array;  
@@ -72,19 +79,29 @@ Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mante
      
      -> int contem_apenas_letras: Essa função verifica que quando o cliente inserir seu nome so será aceito e  cadastrado quando for digitado uma string, recussando e pedindo para digitar novamente se for inserido um inteiro no campo nome.
    
-    ( contem apenas numeros)
+    -> int contem_apenas_letras: Essa função verifica que quando o cliente inserir seu nome só será aceito e  cadastrado quando for digitado uma string, recussando e pedindo para digitar novamente se for inserido um inteiro no campo nome.
 
-  -> QuickSort:
-      * É a função principal do algoritmo;
-      * Recebe um array de clientes e o número total de clientes como argumentos;
-      * Chama a função particao para dividir os arrays;
-      * Realiza A ordenalção recursiva das duas partes separadas.
+    -> QuickSort:
+      *  É a função principal do algoritmo;
+      *  Recebe um array de clientes e o número total de clientes como argumentos;
+      *  Chama a função particao para dividir os arrays;
+      *  Realiza A ordenalção recursiva das duas partes separadas.
 
+<<<<<<< HEAD
       (ler aquivo)
       (inserir novos clientes)
       (explicação de allan com a foto )
 
   
+=======
+    -> atribuirDados:
+      * Responável por escrever os dados ods clientes, agora ordenados, no arquivo clientes.txt;
+      * Recebe um array do tipo estruturado Cliente e o número de clientes cadastrados como argumentos;
+      * Abre o arquivo clientes.txt em modo de adição ("a"), para adiconar os dados sem apagar os que ja estavam cadastrados;
+      * Percorre cada arrays usando o loop for;
+      * Usa o fprintf para escrever os dados de cada cliente no arquivo;
+      * Finalmente fecha o arquivo com fclose(client).
+>>>>>>> 9bdfd19c82930f362dcaf0db972eacb82092f10d
 
       \\ cliente.h \\
 

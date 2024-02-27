@@ -1,5 +1,3 @@
-código do cliente: 12345	 Nome: clara	 Endereço: rodolfo fernandes
-código do cliente: 13245	 Nome: shamyra 	 Endereço: pau dos ferros
-código do cliente: 12345	 Nome: alexandre	 Endereço: rn
-código do cliente: 14235	 Nome: alice	 Endereço: rs
-código do cliente: 0	 Nome: clara	 Endereço: brasil
+666	Allan	Encanto
+852	Daniel		Jose da Penha
+987	Evelyn		Antonio Martins
