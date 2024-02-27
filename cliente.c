@@ -4,7 +4,6 @@
 #include <ctype.h>
 
 struct client{
-    int numero_cliente;
     char nome[50];
     char endereco[100];
     int codigo_cliente;
@@ -55,6 +54,17 @@ int contem_apenas_letras(char *str) {
     return 1; //não contém apenas letras
 }
 
+int contem_apenas_numeros(char *str) {
+    //percorre cada posição na string 
+    for (int index = 0; str[index] != '\0'; index++) {
+        if (isalpha(str[index]) && str[index]) {
+            printf("só aceita numero!!!!!!!!\n");
+            return 0;
+        }
+    }
+    return 1;
+}
+
 void quicksort(Cliente *clientes, int n){
     particao(clientes, 0, n - 1);
 }
@@ -65,6 +75,34 @@ void atribuirDados(Cliente *clientes, int n){
     for(int i = 0; i < n; i++){
         fprintf(client, "código do cliente: %d\t Nome: %s\t Endereço: %s\n", clientes[i].codigo_cliente,
         clientes[i].nome, clientes[i].endereco); 
+    }
+    fclose(client); 
+}
+
+Cliente *lerArquivo(Cliente *clientes, int *n){
+    FILE *ler = fopen("clientes.txt","r");
+    char linha[100];
+    int qnt = 0;
+    while (fgets(linha,100,ler) != NULL)
+    {
+        qnt++;
+    }
+    clientes = (Cliente*) malloc((qnt + 1) * sizeof(Cliente));
+    rewind(ler);
+    while (fgets(linha,100,ler) != NULL)
+    {
+        sscanf(linha,"%d\t%[^\t]%[^\n]", &clientes[(*n)].codigo_cliente, clientes[(*n)].nome,clientes[(*n)].endereco);   
+        (*n)++;
+    }
+    fclose(ler);
+    return clientes;
+}
+
+void inserirNovosClientes(Cliente *clientes, int n){
+
+    FILE *client = fopen("clientes.txt", "w"); 
+    for(int i = 0; i < n; i++){
+        fprintf(client, "%d\t%s\t%s\n", clientes[i].codigo_cliente,clientes[i].nome, clientes[i].endereco); 
     }
     fclose(client); 
 }

@@ -1,4 +1,0 @@
-código do cliente: 100	 Nome: Allan	 Endereço: j
-código do cliente: 200	 Nome: Clara 	 Endereço: l
-código do cliente: 101	 Nome: kk	 Endereço: l
-código do cliente: 2	 Nome: c	 Endereço: r
