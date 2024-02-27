@@ -1,4 +1,3 @@
-
 <h1 align="left">QuickSort 💻</h1>
 
 ###
@@ -54,54 +53,14 @@
 <p align="left">O projeto consiste na implementação do algoritmo Quicksort para ordenar clientes com base em um ID atribuído a cada um. Após a ordenação, os dados dos clientes são armazenados em um arquivo .txt para manter os registros constantemente atualizados. Três bibliotecas são essenciais para o funcionamento do código:<br><br>      1. Stdlib.h: Contém funções básicas para manipulação de memória dinâmica. <br>      2. Stdio.h: Oferece funções para entrada e saída de dados.<br>      3. Cliente.h: Uma biblioteca criada especificamente para o projeto, com funções que implementam o Quicksort e gerenciam os dados em arquivos de texto.<br>      4. Time.h: Biblioteca padrão do C que inclui funções para manipulação de datas e horas.<br>      5. ctype.h: Biblioteca que contém funções e macros para manipulação de caracteres.</p>
 
 ###
-   \\ clientes.c \\ 
 
-<<<<<<< HEAD
-      -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.
+<h1 align="left">Cliente.c</h1>
 
-      -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.
+###
 
-      -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.
-=======
-    -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.
-    -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.
-    
-    -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.
->>>>>>> 9bdfd19c82930f362dcaf0db972eacb82092f10d
-      * PIVO        : Escolhe o primerio cliente como pivô;
-      * i           : Inicializa i para apontar para o segundo cliente no array;
-      * j           : Inicializa j para apontar para o último cliente do array;  
-      * O loop principal (while(i <= fim)) realiza os movimentos dentro do array , trocando a posição dos clientes quando necessário;
-      * Primeiro if : Se o código do cliente em i for menor ou igual ao do pivô, incrementa o valor de i;
-      * if else     : Se o código do cliente em j for maior que o código do cliente em j, decrementa o valor de j;
-      * else        : Se nenhuma das condições anteriores for verdadeira, os clientes em i e j são trocados de posição usando a função;
-      * Após o loop, o cliente na posição do pivô troca de posição com o cliente em j, determinando que o pivô agora é ele.  
-     
-     -> int contem_apenas_letras: Essa função verifica que quando o cliente inserir seu nome so será aceito e  cadastrado quando for digitado uma string, recussando e pedindo para digitar novamente se for inserido um inteiro no campo nome.
-   
-    -> int contem_apenas_letras: Essa função verifica que quando o cliente inserir seu nome só será aceito e  cadastrado quando for digitado uma string, recussando e pedindo para digitar novamente se for inserido um inteiro no campo nome.
+<p align="left">-> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.<br><br>      -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.<br><br>      -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.<br>=======<br>    -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.<br>    -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.<br>    <br>    -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.<br>>>>>>>> 9bdfd19c82930f362dcaf0db972eacb82092f10d<br>      * PIVO        : Escolhe o primerio cliente como pivô;<br>      * i           : Inicializa i para apontar para o segundo cliente no array;<br>      * j           : Inicializa j para apontar para o último cliente do array;  <br>      * O loop principal (while(i <= fim)) realiza os movimentos dentro do array , trocando a posição dos clientes quando necessário;<br>      * Primeiro if : Se o código do cliente em i for menor ou igual ao do pivô, incrementa o valor de i;<br>      * if else     : Se o código do cliente em j for maior que o código do cliente em j, decrementa o valor de j;<br>      * else        : Se nenhuma das condições anteriores for verdadeira, os clientes em i e j são trocados de posição usando a função;<br>      * Após o loop, o cliente na posição do pivô troca de posição com o cliente em j, determinando que o pivô agora é ele.  <br>     <br>     -> int contem_apenas_letras: Essa função verifica que quando o cliente inserir seu nome so será aceito e  cadastrado quando for digitado uma string, recussando e pedindo para digitar novamente se for inserido um inteiro no campo nome.<br><br>-> int contem_apenas_numeros: Essa função verifica se a mensagem inserida foram apenas números, quando digitada uma letra é recusado e pedido para digitar a mensagem novamente.<br>-> QuickSort:<br>      *  É a função principal do algoritmo;<br>      *  Recebe um array de clientes e o número total de clientes como argumentos;<br>      *  Chama a função particao para dividir os arrays;<br>      *  Realiza A ordenalção recursiva das duas partes separadas.<br>-> *lerarquivo:<br>         * Responsável por ler os dados dos clientes, agora ordenados corretamente, no arquivo ‘clientes.txt’;<br>         * Ela recebe um array do tipo estruturado Cliente e o número de clientes cadastrados como argumentos;<br>         * No comando ‘FILE *ler = fopen(“Clientes.txt”, “r”);’, os dados dos clientes serão lidos no arquivo;<br>         * No ‘while’ o programa lê cada linha do arquivo usando fgets, onde cada vez que uma linha é lida, a variável qnt é incrementada;<br>         * Na alocação dinâmica a memória é alocada dinamicamente para armazenar os dados de clientes, onde o tamanho alocado é (qnt + 1)* sizeof(Cliente), isso <br>           permite que a estrutura de dados clientes armazene todas as informações lidas no arquivo;<br>         * No rewind(ler), o ponteiro de arquivo é movido para o início para que seja lido novamente todas as informações do arquivo;<br>         * No segundo loop while, o programa lê cada linha do arquivo novamente, onde a função sscanf é usada para analisar a linha e preencher os campos da <br>         estrutura cliente. No índice n* é rastreado a posição atual  na  estrutura de dados clientes, onde seu valor é incrementado a cada leitura;<br>         * No ‘fclose(ler)’ fechamos o arquivo de texto;<br>         * Em return clientes o ponteiro é retornado para clientes.<br>-> inserirNovosClientes:<br>        * Essa função possui a responsabilidade de subscrever os novos clientes inseridos juntamente com os antigos no arquivo cliente. txt;<br>        * Em FILE *client = fopen("clientes.txt", "w") foi criado um ponteiro cliente associado ao arquivo clientes.txt no modo escrita, tornando possível o <br>          programa escrever ou criar um novo arquivo caso ele não exista;<br>        * No for é percorrido todos os clientes representados pelo array de estrutura Cliente;<br>        * Em fclose(client) o arquivo é fechado após a escrita.<br>-> atribuirDados:<br>      * Responável por escrever os dados ods clientes, agora ordenados, no arquivo clientes.txt;<br>      * Recebe um array do tipo estruturado Cliente e o número de clientes cadastrados como argumentos;<br>      * Abre o arquivo clientes.txt em modo de adição ("a"), para adiconar os dados sem apagar os que ja estavam cadastrados;<br>      * Percorre cada arrays usando o loop for;<br>      * Usa o fprintf para escrever os dados de cada cliente no arquivo;<br>      * Finalmente fecha o arquivo com fclose(client).</p>
 
-    -> QuickSort:
-      *  É a função principal do algoritmo;
-      *  Recebe um array de clientes e o número total de clientes como argumentos;
-      *  Chama a função particao para dividir os arrays;
-      *  Realiza A ordenalção recursiva das duas partes separadas.
-
-<<<<<<< HEAD
-      (ler aquivo)
-      (inserir novos clientes)
-      (explicação de allan com a foto )
-
-  
-=======
-    -> atribuirDados:
-      * Responável por escrever os dados ods clientes, agora ordenados, no arquivo clientes.txt;
-      * Recebe um array do tipo estruturado Cliente e o número de clientes cadastrados como argumentos;
-      * Abre o arquivo clientes.txt em modo de adição ("a"), para adiconar os dados sem apagar os que ja estavam cadastrados;
-      * Percorre cada arrays usando o loop for;
-      * Usa o fprintf para escrever os dados de cada cliente no arquivo;
-      * Finalmente fecha o arquivo com fclose(client).
->>>>>>> 9bdfd19c82930f362dcaf0db972eacb82092f10d
+###
 
       \\ cliente.h \\
 
