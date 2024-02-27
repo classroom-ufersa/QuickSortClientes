@@ -56,10 +56,11 @@ Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mante
 
    \\ clientes.c \\ 
 
-  -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.
-  -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.
-  -> int contem_apenas_letras: Essa função verifica que quando o cliente inserir seu nome so será aceito e  cadastrado quando for digitado uma string, recussando e pedindo para digitar novamente se for inserido um inteiro no campo nome.
-  -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.
+      -> Struct cliente.c: Temos as variáveis que constituem os dados do cliente, os quais são: nome, endereço e código, que seria seu ID de identificação.
+
+      -> Trocar_posicao: Essa função troca a posição de dois clientes na memória. Ela recebe dois ponteiros como parâmetros, apontando para os endereços de memória dos clientes. Os conteúdos desses ponteiros são trocados entre si.
+
+      -> Particao: Essa função é crucial para a implementação do algoritmo Quicksort. Ela divide uma array em duas pilhas: uma com valores menores que o pivô e outra com valores maiores que o pivô.
       * PIVO        : Escolhe o primerio cliente como pivô;
       * i           : Inicializa i para apontar para o segundo cliente no array;
       * j           : Inicializa j para apontar para o último cliente do array;  
@@ -68,6 +69,10 @@ Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mante
       * if else     : Se o código do cliente em j for maior que o código do cliente em j, decrementa o valor de j;
       * else        : Se nenhuma das condições anteriores for verdadeira, os clientes em i e j são trocados de posição usando a função;
       * Após o loop, o cliente na posição do pivô troca de posição com o cliente em j, determinando que o pivô agora é ele.  
+     
+     -> int contem_apenas_letras: Essa função verifica que quando o cliente inserir seu nome so será aceito e  cadastrado quando for digitado uma string, recussando e pedindo para digitar novamente se for inserido um inteiro no campo nome.
+   
+    ( contem apenas numeros)
 
   -> QuickSort:
       * É a função principal do algoritmo;
@@ -75,13 +80,11 @@ Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mante
       * Chama a função particao para dividir os arrays;
       * Realiza A ordenalção recursiva das duas partes separadas.
 
-  -> atribuirDados:
-      * Responável por escrever os dados ods clientes, agora ordenados, no arquivo clientes.txt;
-      * Recebe um array do tipo estruturado Cliente e o número de clientes cadastrados como argumentos;
-      * Abre o arquivo clientes.txt em modo de adição ("a"), para adiconar os dados sem apagar os que ja estavam cadastrados;
-      * Percorre cada arrays usando o loop for;
-      * Usa o fprintf para escrever os dados de cada cliente no arquivo;
-      * Finalmente fecha o arquivo com fclose(client).
+      (ler aquivo)
+      (inserir novos clientes)
+      (explicação de allan com a foto )
+
+  
 
       \\ cliente.h \\
 
@@ -90,14 +93,25 @@ Tem como finalidade armazenar os clientes ordenados em um arquivo .txt que mante
       \\ main.c \\
 
       -> Esse é nosso arquivo main onde contém o nosso código fonte, onde o programa é executado.
+
           * Registro do tempo de início: a linha clock_t comeco = clock();
+
           * Loop com do while: o bloco do while cria um loop que continua até que o usuário insira um número mválido maior que zero, pnde esse número representa a quantidade de clientes a serem cadastrados;
-          * Alocação dinâmica: na linha Cliente clientes = (cliente *) malloc(n *sizeof(Cliente)); realiza a alocação de memória para a qauntidade de n clientes , permitindo que o programa trabalhe somente com a quantidade de memória necessária;
+
+          * Realocação dinâmica: 
+
           * Verificação de alocação de memória: o if identifica se a alocaçaõ foi feita com sucesso;
+
           * Loop para coletar os dados  dos clientes: um loop for solicita que sejam fornecidos os dados dos clientes n outrora especificados;
+
           * Chamada da função quicksort: a linha quicksort(clientes, n) chama a função quicksort criada no arquivo clientes.c e encapsulada no arquivo clientes.h;
-          * Chamada da função atribuirDados: A linha atribuirDados(clientes, n); chama a função que faz o registro dos dados no arquivo .txt;
+
+          * Chamada da função ler arquivo:
+
+          * Chamada da função inserir novos clientes: 
+
           * Liberação da memória: O comando free(clientes); libera a memória inicialmente alocada;
+
           * Cálculo do tempo de execução: A variável double tempo calcula o tempo de execução e exibe-o para o usuário.
 
 ## Análise de complexidade 
