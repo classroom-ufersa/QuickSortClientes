@@ -9,3 +9,7 @@ para cada um cliente*/
 void quicksort(Cliente *clientes, int n);
 /* Função para verificar se possui um inteiro onde deveria ser informado uma string*/
 int contem_apenas_letras(char *str);
+void inserirNovosClientes(Cliente *clientes, int n);
+
+Cliente *lerArquivo(Cliente *clientes, int *n);
+int contem_apenas_numeros(char *str);
